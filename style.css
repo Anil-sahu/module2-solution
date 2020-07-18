@@ -1,0 +1,98 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin-right: 10px;
+}
+
+h1{
+	
+	text-align: center;
+	font-family:Javanese Text; 
+	margin-top: 50px;
+	font-size: 60px;
+}
+.first,.second,.third{
+	box-sizing: border-box;
+	border: 1px solid black;
+	width:450px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: Malgun Gothic;
+    font-weight: bold;
+	float: left;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#fp,#sp,#tp{
+	float: right;
+    box-sizing: border-box;
+	border: 1px solid black;
+	width: 150px;
+	font-size:35px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	text-align: center;	
+	font-family: Sitka Text;
+}
+
+#fp{
+	background-color: rgba(255,0,0,0.5);
+}
+#sp{
+	background-color: rgba(0,255,0,0.5);
+}
+#tp{
+	background-color: rgba(0,0,255,0.3);
+}
+#para{
+	margin-right: 10px;
+}
+
+/***************for larg device*********************/
+
+
+@media  (min-width: 992px) {
+ .first,.second,.third{
+		width: 30.33%;
+		float: left;
+	}
+	section{
+		margin-right:0px;
+		margin-left: 5px;
+	}
+}
+
+
+/***************for medium device*********************/
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.first,.second{
+		width: 47%;
+	}
+	.third{
+		width:96.5%;
+	}
+}
+
+
+/***************for small device*********************/
+
+
+@media  (max-width:767px){
+	.first,.second,.third{
+		width: 97%;
+		overflow-x: scroll;
+	}
+	h1{
+		font-size: 50px;
+	}
+	section{
+		margin-right: 15px;
+	}
+}
